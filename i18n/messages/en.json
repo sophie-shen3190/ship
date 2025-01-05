@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "title": "MakeSong: Free AI Music & Song Generator ",
+    "description":    "MakeSong is an all-in-one AI-powered music and song generator that creates high-quality, royalty-free tracks. We also offer make-song tools like Vocal Remover to help you create professional-grade music for videos, social media, and more." ,
+    "keywords": "ShipAny, AI SaaS Boilerplate, NextJS Boilerplate"
+  },
+  "user": {
+    "sign_in": "Sign In",
+    "sign_out": "Sign Out",
+    "credits": "Credits",
+    "api_keys": "API Keys",
+    "my_orders": "My Orders"
+  },
+  "sign_modal": {
+    "sign_in_title": "Sign In",
+    "sign_in_description": "Sign in to your account",
+    "sign_up_title": "Sign Up",
+    "sign_up_description": "Create an account",
+    "email_title": "Email",
+    "email_placeholder": "Input your email here",
+    "password_title": "Password",
+    "password_placeholder": "Input your password here",
+    "forgot_password": "Forgot password?",
+    "or": "Or",
+    "continue": "Continue",
+    "no_account": "Don't have an account?",
+    "email_sign_in": "Sign in with Email",
+    "google_sign_in": "Sign in with Google",
+    "github_sign_in": "Sign in with GitHub",
+    "close_title": "Close",
+    "cancel_title": "Cancel"
+  }
+}
