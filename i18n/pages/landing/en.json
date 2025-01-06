@@ -12,14 +12,14 @@
     },
     "nav": {
       "items": [
-        {
-          "title": "Features",
-          "url": "/#feature",
+        { 
+          "title": "Create Song",
+          "url": "/ai-music-generator",
           "icon": "HiOutlineSparkles"
         },
         {
-          "title": "Pricing",
-          "url": "/#pricing",
+          "title": "Vocal Remover",
+          "url": "//ai-vocal-remover",
           "icon": "MdPayment"
         },
         {

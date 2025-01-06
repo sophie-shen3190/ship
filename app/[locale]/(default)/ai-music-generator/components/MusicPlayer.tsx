@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useRef, useState } from 'react'
 import { Pause, Play, SkipBack, SkipForward, Volume2 } from 'lucide-react'
-import { cn } from '@ui/lib'
+import { cn } from '@/components/ui/cn'
 
 interface MusicPlayerProps {
   audioUrl?: string

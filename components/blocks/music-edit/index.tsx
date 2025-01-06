@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Wand2, X, Brush, Loader2 } from 'lucide-react'
 import { useRouter } from 'next/navigation'
-//import mofabang from '@/app/public/mofabang.png'
+import mofabang from '@/app/public/mofabang.png'
 import ProgressBar from './components/ProgressBar'
 import { useLocale } from 'next-intl'
 

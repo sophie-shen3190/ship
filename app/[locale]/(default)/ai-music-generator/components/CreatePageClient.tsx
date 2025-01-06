@@ -1,9 +1,9 @@
 'use client'
 
-import { Button } from '@ui/components/button'
-import { cn } from '@ui/lib'
+import { Button } from '@/components/ui/button'
+import { cn } from '@/components/ui/cn'
 import { useEffect, useRef, useState } from 'react'
-import MusicEdit, { TaskResponse } from '../../(home)/components/MusicEdit'
+import MusicEdit, { TaskResponse } from '@/components/blocks/music-edit'
 import { MusicPlayer } from './MusicPlayer'
 import * as Tooltip from '@radix-ui/react-tooltip'
 import { getPresetResponse } from './json/presetResponses'

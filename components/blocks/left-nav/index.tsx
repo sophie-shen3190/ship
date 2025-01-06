@@ -2,17 +2,14 @@
 
 import { useEffect, useState } from 'react'
 import { Music, Speaker, Volume2, Crown } from 'lucide-react'
-
-
-import { useRouter } from 'next/navigation' // 添加路由导入
-import { activeItemAtom } from '@saas/stores'
-import { useAtom, useAtomValue } from 'jotai'
+import { useRouter } from 'next/navigation'
 import { cn } from '@/components/ui/cn'
+
 const colors = {
   primary: '#DA62C4',
   primaryFrom: '#9F3BF9',
   primaryTo: '#DA62C4',
-  textGray: '#4B5563' // 更暗的灰色
+  textGray: '#4B5563'
 } as const
 
 interface LeftNavProps {
@@ -21,7 +18,8 @@ interface LeftNavProps {
 
 export function LeftNav({ children }: LeftNavProps) {
   const [isExpanded, setIsExpanded] = useState(false)
-  const [activeItem, setActiveItem] = useAtom(activeItemAtom)
+  const [activeItem, setActiveItem] = useState<number | null>(null)
+  const router = useRouter()
 
   useEffect(() => {
     const path = window.location.pathname
@@ -31,8 +29,6 @@ export function LeftNav({ children }: LeftNavProps) {
       setActiveItem(activeIndex)
     }
   }, [])
-
-  const router = useRouter() // 初始化路由
 
   const navItems = [
     {
@@ -45,11 +41,6 @@ export function LeftNav({ children }: LeftNavProps) {
       label: 'Vocal Isolation',
       href: '/ai-vocal-remover'
     }
-    // {
-    //   icon: <Volume2 className='h-6 w-6' />,
-    //   label: 'Free sound effects',
-    //   href: '#'
-    // }
   ]
 
   const handleNavClick = (index: number, href: string) => {

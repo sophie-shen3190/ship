@@ -2,7 +2,7 @@
 import { getTranslations } from 'next-intl/server'
 import CreatePageClient from './components/CreatePageClient'
 import Head from 'next/head'
-import { LeftNav } from '../components/LeftNav'
+import { LeftNav } from '@/components/blocks/left-nav'
 import { Metadata } from 'next'
 
 //
