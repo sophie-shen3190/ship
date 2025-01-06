@@ -9,5 +9,9 @@ export default function SignToggle() {
   const t = useTranslations();
   const { user } = useAppContext();
 
-  return <>{user ? <User user={user} /> : <SignIn />}</>;
+  return (
+    <div className="flex items-center gap-x-2 px-2">
+      {user ? <User user={user} /> : <SignIn />}
+    </div>
+  );
 }
