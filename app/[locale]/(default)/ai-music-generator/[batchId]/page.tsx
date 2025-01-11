@@ -1,7 +1,7 @@
 // app/[locale]/(main)/create/page.tsx (Server Component)
 import { getTranslations } from 'next-intl/server'
 import CreatePageClient from '../components/CreatePageClient'
-import { LeftNav } from '../../components/LeftNav'
+import { LeftNav } from '@/components/blocks/left-nav'
 
 export async function generateMetadata() {
   const t = await getTranslations()

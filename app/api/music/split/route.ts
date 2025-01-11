@@ -1,9 +1,13 @@
 import { NextResponse } from 'next/server'
 
+const API_TOKEN = process.env.AI_MUSIC_API_TOKEN || 'sk-b37bf1237a3b45788c9569ebccc03a88'
+const USER_ID = process.env.AI_MUSIC_USER_ID || '413564'
+const BASE_URL = process.env.AI_MUSIC_BASE_URL || 'https://dzwlai.com/apiuser/_open/suno'
+
 const API_BASE_URL = 'https://dzwlai.com/apiuser/_open/suno/music'
 const HEADERS = {
-  'x-token': 'sk-b37bf1237a3b45788c9569ebccc03a88',
-  'x-userId': '413564'
+  'x-token': API_TOKEN!,
+  'x-userId': USER_ID!
 }
 
 export async function POST(request: Request) {

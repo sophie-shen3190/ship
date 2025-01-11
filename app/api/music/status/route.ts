@@ -6,6 +6,8 @@ const API_TOKEN = process.env.AI_MUSIC_API_TOKEN || 'sk-b37bf1237a3b45788c9569eb
 const USER_ID = process.env.AI_MUSIC_USER_ID || '413564'
 const BASE_URL = process.env.AI_MUSIC_BASE_URL || 'https://dzwlai.com/apiuser/_open/suno'
 
+
+
 export async function GET(req: Request) {
   try {
     const { searchParams } = new URL(req.url)
